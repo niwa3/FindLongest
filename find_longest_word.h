@@ -6,9 +6,16 @@
 #include <string>
 #include <sstream>
 #include <map>
+#include <unordered_map>
 #include <limits>
 #include <algorithm>
+#include <chrono>
+#include <unistd.h>
 
-int find_longest_word(std::string S, std::string D_str);
+//brute force
+std::string find_longest_word(std::string S, std::string D_str);
+
+//greedy algorithm
+std::string find_longest_word_greedy(std::string S, std::string D_str);
 
 #endif
